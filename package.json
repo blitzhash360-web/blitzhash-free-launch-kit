@@ -1,0 +1,20 @@
+{
+  "name": "blitzhash-free-launch-kit",
+  "version": "1.0.0",
+  "description": "Free tiers for founders building with AI (Lovable, Bolt, v0, Cursor, Supabase, Vercel, Cloudflare): what's free and the limit you hit first, verified against official pricing pages.",
+  "type": "module",
+  "bin": { "free-launch-kit": "bin/free-launch-kit.mjs" },
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "build": "node scripts/build-readme.mjs",
+    "check": "node scripts/build-readme.mjs --check"
+  },
+  "files": ["bin", "src", "data", "README.md", "LICENSE"],
+  "keywords": ["free-tier", "free-for-dev", "awesome-list", "vibe-coding", "startup", "saas", "supabase", "vercel", "cloudflare", "lovable"],
+  "author": "BlitzHash (https://blitzhash.com)",
+  "license": "MIT",
+  "homepage": "https://blitzhash.com",
+  "repository": { "type": "git", "url": "git+https://github.com/blitzhash360-web/blitzhash-free-launch-kit.git" },
+  "bugs": { "url": "https://github.com/blitzhash360-web/blitzhash-free-launch-kit/issues" }
+}

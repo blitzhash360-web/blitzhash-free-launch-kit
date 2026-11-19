@@ -1,0 +1,13 @@
+# Link check config (lychee). Some vendor sites rate-limit or block bots (403/429);
+# those count as "reachable" so the check doesn't flake. Real 404s and dead domains still fail.
+max_retries = 3
+retry_wait_time = 5
+timeout = 30
+max_concurrency = 8
+user_agent = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0 Safari/537.36"
+accept = ["100..=103", "200..=299", "403", "429"]
+exclude_path = ["node_modules"]
+exclude = [
+  # The repo's own CI badges/workflow pages before the first run
+  "^https://github\\.com/blitzhash360-web/blitzhash-free-launch-kit/actions",
+]
